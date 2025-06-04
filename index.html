@@ -1,283 +1,433 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Wenke Xia</title>
-  
-  <meta name="author" content="Jon Barron">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="images/favicon_io.png">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wenke Xia (夏文科) - Personal Homepage</title>
+    <link rel="icon" href="images/favicon_io.png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
-
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Wenke Xia (夏文科)</name>
-              </p>
-              <p>I am a third year PhD student in <a href="https://gewu-lab.github.io/">GeWu-Lab</a> at <a href="http://ai.ruc.edu.cn/">Gaoling School of Artificial Intelligence</a>, Renmin University of China. 
-                I am advised by <a href="https://dtaoo.github.io/">Prof. Di Hu</a>. Now my research interests focus on generalizable robotic manipulation and emboided AI.
-              </p>
+    <!-- Dark Mode Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
 
-              <p>I received my bachelor's degree at the <a href="https://csw.jlu.edu.cn/">College of Software, Jilin University</a> in 2022. I also awarded the National Scholarship in Jilin University.
-              </p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#news" class="nav-link">News</a>
+            <a href="#publications" class="nav-link">Publications</a>
+            <a href="#services" class="nav-link">Services</a>
+        </div>
+    </nav>
 
-              <p style="text-align:center">
-                <a href="mailto:xiawenke2022@ruc.edu.cn">Email</a> &nbsp/&nbsp
-                <a href="https://scholar.google.co.il/citations?user=v69hlTUAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-                <!--
-                <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp
-                <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp/&nbsp  -->
-                <a href="https://github.com/xwinks/">Github</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:30%;max-width:30%">
-              <a href="images/wenke.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/wenke.jpg" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
+    <!-- Main Container -->
+    <main class="main-container">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="profile-info">
+                    <h1 class="name-title">
+                        <span class="name-en">Wenke Xia</span>
+                        <span class="name-cn">(夏文科)</span>
+                    </h1>
+                    <div class="bio-text">
+                        <p>I am a third year PhD student in <a href="https://gewu-lab.github.io/" target="_blank" class="link-highlight">GeWu-Lab</a> at <a href="http://ai.ruc.edu.cn/" target="_blank" class="link-highlight">Gaoling School of Artificial Intelligence</a>, Renmin University of China.</p>
+                        <p>I am advised by <a href="https://dtaoo.github.io/" target="_blank" class="link-highlight">Prof. Di Hu</a>. My research interests focus on <span class="research-highlight">generalizable robotic manipulation</span> and <span class="research-highlight">embodied AI</span>.</p>
+                        <p>I received my bachelor's degree at the <a href="https://csw.jlu.edu.cn/" target="_blank" class="link-highlight">College of Software, Jilin University</a> in 2022. I was also awarded the National Scholarship in Jilin University.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="mailto:xiawenke2022@ruc.edu.cn" class="social-btn email" title="Email">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://scholar.google.co.il/citations?user=v69hlTUAAAAJ&hl=en" target="_blank" class="social-btn scholar" title="Google Scholar">
+                            <i class="fab fa-google"></i>
+                            <span>Scholar</span>
+                        </a>
+                        <a href="https://github.com/xwinks/" target="_blank" class="social-btn github" title="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="profile-image">
+                    <div class="image-container">
+                        <img src="images/wenke.jpg" alt="Wenke Xia" class="profile-photo">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- News Section -->
+        <section id="news" class="section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-newspaper"></i>
+                    Latest News
+                </h2>
+            </div>
+            <div class="news-container">
+                <div class="news-item" data-year="2025">
+                    <div class="news-date">2025-02</div>
+                    <div class="news-content">
+                        <span class="news-highlight">CVPR 2025</span> - One paper accepted! Thanks to all co-authors!
+                    </div>
+                </div>
+                <div class="news-item" data-year="2025">
+                    <div class="news-date">2025-01</div>
+                    <div class="news-content">
+                        <span class="news-highlight">ICLR 2025</span> - One paper accepted! Thanks to all co-authors!
+                    </div>
+                </div>
+                <div class="news-item" data-year="2024">
+                    <div class="news-date">2024-08</div>
+                    <div class="news-content">
+                        <span class="news-highlight">CoRL 2024</span> - One paper accepted! Thanks to all co-authors!
+                    </div>
+                </div>
+                <div class="news-item" data-year="2024">
+                    <div class="news-date">2024-06</div>
+                    <div class="news-content">
+                        <span class="news-highlight">IROS 2024</span> - One paper accepted! Thanks to all co-authors!
+                    </div>
+                </div>
+                <div class="news-item" data-year="2024">
+                    <div class="news-date">2024-05</div>
+                    <div class="news-content">
+                        <span class="news-highlight">RSS 2024</span> - One paper accepted! Thanks to all co-authors!
+                    </div>
+                </div>
+                <div class="news-item" data-year="2024">
+                    <div class="news-date">2024-02</div>
+                    <div class="news-content">
+                        <span class="news-highlight">ICRA 2024</span> - One paper accepted! Thanks to all co-authors!
+                    </div>
+                </div>
+                <div class="news-item" data-year="2023">
+                    <div class="news-date">2023-07</div>
+                    <div class="news-content">
+                        <span class="news-highlight">ACM MM 2023</span> - One paper accepted! Thanks to all co-authors!
+                    </div>
+                </div>
+                <div class="news-item" data-year="2023">
+                    <div class="news-date">2023-05</div>
+                    <div class="news-content">
+                        <span class="news-highlight">CVPR Workshop 2023</span> - One paper accepted! Thanks to all co-authors!
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-          <tr>
-          <td style="padding:20px;width:100%;vertical-align:middle">
-            <heading>News</heading>
-            <p>
-              <strong>[2025-02]</strong> One paper accepted by CVPR, thanks to all co-authors!
-            </p>
-            <p>
-              <strong>[2025-01]</strong> One paper accepted by ICLR, thanks to all co-authors!
-            </p>
-            <p>
-              <strong>[2024-08]</strong> One paper accepted by CoRL, thanks to all co-authors!
-            </p>
-            <p>
-              <strong>[2024-06]</strong> One paper accepted by IROS, thanks to all co-authors!
-            </p>
-            <p>
-              <strong>[2024-05]</strong> One paper accepted by RSS, thanks to all co-authors!
-            </p>
-            <p>
-              <strong>[2024-02]</strong> One paper accepted by ICRA, thanks to all co-authors!
-            </p>
+        <!-- Publications Section -->
+        <section id="publications" class="section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-book"></i>
+                    Publications
+                </h2>
+                <p class="section-subtitle">* denotes equal contribution</p>
+            </div>
+            <div class="publications-container">
+                
+                <article class="publication-item">
+                    <div class="pub-image">
+                        <img src="images/cvpr.png" alt="Phoenix paper" loading="lazy">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Phoenix: A Motion-based Self-Reflection Framework for Fine-grained Robotic Action Correction</h3>
+                        <div class="pub-authors">
+                            <span class="author-me">Wenke Xia</span>, Ruoxuan Feng, Dong Wang, <a href="https://dtaoo.github.io/" target="_blank">Di Hu</a>
+                        </div>
+                        <div class="pub-venue">CVPR 2025</div>
+                        <div class="pub-links">
+                            <span class="pub-link coming-soon">Paper Coming Soon</span>
+                        </div>
+                    </div>
+                </article>
 
-            <p>
-              <strong>[2023-07]</strong> One paper accepted by ACM MM, thanks to all co-authors!
-            </p>
-            <p>
-              <strong>[2023-05]</strong> One paper accepted by CVPR Workshop, thanks to all co-authors!
-            </p>
-          </td>
-        </tr>
-      </tbody></table>
+                <article class="publication-item">
+                    <div class="pub-image">
+                        <img src="images/koi.png" alt="KOI paper" loading="lazy">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">KOI: Accelerating Online Imitation Learning via Hybrid Key-state Guidance</h3>
+                        <div class="pub-authors">
+                            Jingxian Lu*, <span class="author-me">Wenke Xia*</span>, Dong Wang, Zhigang Wang, Bin Zhao, <a href="https://dtaoo.github.io/" target="_blank">Di Hu</a>, Xuelong Li
+                        </div>
+                        <div class="pub-venue">CoRL 2024</div>
+                        <div class="pub-links">
+                            <a href="https://www.arxiv.org/abs/2408.02912" target="_blank" class="pub-link">
+                                <i class="fas fa-file-pdf"></i> arXiv
+                            </a>
+                            <a href="https://github.com/GeWu-Lab/Keystate_Online_Imitation" target="_blank" class="pub-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-        <tr>
-        <td style="padding:20px;width:100%;vertical-align:middle">
-          <heading>Services</heading>
-          <p>
-            <strong>Conference Reviewer:</strong> AAAI 2024, IJCAI 2024, ICLR 2025, RA-L
-          </p>
-          <!-- <p>
-            <strong>Journal Reviewer:</strong> TMM
-          </p> -->
-        </td>
-      </tr>
-    </tbody></table>
+                <article class="publication-item">
+                    <div class="pub-image">
+                        <img src="images/depth_help.jpg" alt="Depth Helps paper" loading="lazy">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Depth Helps: Improving Pre-trained RGB-based Policy with Depth Information Injection</h3>
+                        <div class="pub-authors">
+                            Xincheng Pang*, <span class="author-me">Wenke Xia*</span>, Zhigang Wang, Bin Zhao, <a href="https://dtaoo.github.io/" target="_blank">Di Hu</a>, Dong Wang, Xuelong Li
+                        </div>
+                        <div class="pub-venue">IROS 2024</div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2302.10912" target="_blank" class="pub-link">
+                                <i class="fas fa-file-pdf"></i> arXiv
+                            </a>
+                            <a href="https://github.com/GeWu-Lab/DepthHelps-IROS2024" target="_blank" class="pub-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-    <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <heading style="padding:20px">Preprint</heading>
+                <article class="publication-item">
+                    <div class="pub-image">
+                        <img src="images/rss_24.png" alt="MPI paper" loading="lazy">  
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Learning Manipulation by Predicting Interaction</h3>
+                        <div class="pub-authors">
+                            Jia Zeng*, Qingwen Bu*, Bangjun Wang*, <span class="author-me">Wenke Xia*</span>, Li Chen, Hao Dong, Haoming Song, Dong Wang, Di Hu, Ping Luo, Heming Cui, Bin Zhao, Xuelong Li, Yu Qiao, Hongyang Li
+                        </div>
+                        <div class="pub-venue">RSS 2024</div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/pdf/2406.00439" target="_blank" class="pub-link">
+                                <i class="fas fa-file-pdf"></i> arXiv
+                            </a>
+                            <a href="https://github.com/OpenDriveLab/MPI" target="_blank" class="pub-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-      <tr>
-        <td style="padding:20px;width:40%;vertical-align:middle">
-          <img src="./images/revisting.png" alt="clean-usnob" width="400" height="200">
-        </td>
-        <td width="75%" valign="middle">
-          <papertitle>Revisiting Pre-training in Audio-Visual Learning</papertitle>
-          <br>
-          <br>
-          Ruoxuan Feng, <strong>Wenke Xia</strong>, <a href="https://dtaoo.github.io/">Di Hu</a>
-          <br>
-          <br>
-          <em>Under review</em>
-          <br>
-          <a href="https://arxiv.org/abs/2302.03533">arXiv</a>/ <a href="https://github.com/GeWu-Lab/Revisiting-Pre-training-in-Audio-Visual-Learning">code</a>
-          <br>
-        </td>
-      </tr>
-    </tbody></table> -->
+                <article class="publication-item">
+                    <div class="pub-image">
+                        <img src="images/icra_24.png" alt="Kinematic-aware Prompting paper" loading="lazy">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Kinematic-aware Prompting for Generalizable Articulated Object Manipulation with LLMs</h3>
+                        <div class="pub-authors">
+                            <span class="author-me">Wenke Xia*</span>, Dong Wang*, Xincheng Pang, Zhigang Wang, Bin Zhao, <a href="https://dtaoo.github.io/" target="_blank">Di Hu</a>, Xuelong Li
+                        </div>
+                        <div class="pub-venue">ICRA 2024</div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/pdf/2311.02847" target="_blank" class="pub-link">
+                                <i class="fas fa-file-pdf"></i> arXiv
+                            </a>
+                            <a href="https://github.com/xwinks/LLM_articulated_object_manipulation" target="_blank" class="pub-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
+                <article class="publication-item">
+                    <div class="pub-image">
+                        <img src="images/balanced_dataset.png" alt="Balanced Dataset paper" loading="lazy">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Balanced Audiovisual Dataset for Imbalance Analysis</h3>
+                        <div class="pub-authors">
+                            <span class="author-me">Wenke Xia*</span>, Xu Zhao*, Xincheng Pang, <a href="http://cic.tju.edu.cn/faculty/zhangchangqing/code.html" target="_blank">Changqing Zhang</a>, <a href="https://dtaoo.github.io/" target="_blank">Di Hu</a>
+                        </div>
+                        <div class="pub-venue">CVPR Workshop 2023</div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2302.10912" target="_blank" class="pub-link">
+                                <i class="fas fa-file-pdf"></i> arXiv
+                            </a>
+                            <a href="https://github.com/GeWu-Lab/Balanced_Audiovisual_Dataset" target="_blank" class="pub-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-    
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <heading style="padding:20px">Publications</heading>(&#42; equal contribution)
+                <article class="publication-item">
+                    <div class="pub-image">
+                        <img src="images/ICME.png" alt="Cross-Modal Knowledge Distillation paper" loading="lazy">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Robust Cross-Modal Knowledge Distillation for Unconstrained Videos</h3>
+                        <div class="pub-authors">
+                            <span class="author-me">Wenke Xia</span>, <a href="https://scholar.google.com/citations?user=f9V0NZkAAAAJ&hl=en" target="_blank">Xingjian Li</a>, <a href="https://antony0621.github.io/" target="_blank">Andong Deng</a>, Haoyi Xiong, <a href="https://ix.cs.uoregon.edu/~dou/" target="_blank">Dejing Dou</a>, <a href="https://dtaoo.github.io" target="_blank">Di Hu</a>
+                        </div>
+                        <div class="pub-venue">ICME 2023</div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2304.07775" target="_blank" class="pub-link">
+                                <i class="fas fa-file-pdf"></i> arXiv
+                            </a>
+                            <a href="https://github.com/GeWu-Lab/cross-modal-distillation" target="_blank" class="pub-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
+            </div>
+        </section>
 
-      <tr>
-        <td style="padding:20px;width:40%;vertical-align:middle; text-align:center;">
-          <img src="./images/cvpr.png" alt="clean-usnob" width="230" height="300">
-        </td>
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-handshake"></i>
+                    Academic Services
+                </h2>
+            </div>
+            <div class="services-container">
+                <div class="service-item">
+                    <h3 class="service-title">Conference Reviewer</h3>
+                    <div class="service-list">
+                        <span class="service-tag">AAAI 2024</span>
+                        <span class="service-tag">IJCAI 2024</span>
+                        <span class="service-tag">ICLR 2025</span>
+                        <span class="service-tag">RA-L</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>Updated April 2025</p>
+            </div>
+            <div class="footer-right">
+                <p>Thanks <a href="https://jonbarron.info" target="_blank">Jon Barron</a> for the original template inspiration</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const themeIcon = themeToggle.querySelector('i');
+
+        // Check for saved theme preference or default to 'light'
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        body.classList.add(currentTheme + '-theme');
+        updateThemeIcon(currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const isLight = body.classList.contains('light-theme');
+            body.classList.remove('light-theme', 'dark-theme');
+            const newTheme = isLight ? 'dark' : 'light';
+            body.classList.add(newTheme + '-theme');
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+
+        function updateThemeIcon(theme) {
+            themeIcon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        ScrollReveal().reveal('.hero-content', { 
+            duration: 1000,
+            distance: '50px',
+            origin: 'top'
+        });
+
+        ScrollReveal().reveal('.news-item', { 
+            duration: 800,
+            distance: '30px',
+            origin: 'left',
+            interval: 100
+        });
+
+        ScrollReveal().reveal('.publication-item', { 
+            duration: 800,
+            distance: '30px',
+            origin: 'bottom',
+            interval: 150
+        });
+
+        ScrollReveal().reveal('.service-item', { 
+            duration: 800,
+            distance: '30px',
+            origin: 'right'
+        });
+
+        // Scroll to top button
+        const scrollTopBtn = document.getElementById('scrollTop');
         
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
+            }
+        });
 
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
 
-        <td width="75%" valign="middle">
-          <papertitle>Phoenix: A Motion-based Self-Reflection Framework for Fine-grained Robotic Action Correction</papertitle>
-          <br>
-          <br>
-          <strong>Wenke Xia</strong>, Ruoxuan Feng, Dong Wang, <a href="https://dtaoo.github.io/">Di Hu</a>
-          <br>
-          <br>
-          <em>CVPR, 2025</em>
-          <br>
-          <!-- <a href="https://www.arxiv.org/abs/2408.02912">arXiv</a>  -->
-          <br>
-        </td>
-      </tr>
+        // Active navigation highlighting
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
 
-      <tr>
-        <td style="padding:20px;width:40%;vertical-align:middle">
-          <img src="./images/koi.png" alt="clean-usnob" width="400" height="200">
-        </td>
-        <td width="75%" valign="middle">
-          <papertitle>KOI: Accelerating Online Imitation Learning via Hybrid Key-state Guidance</papertitle>
-          <br>
-          <br>
-          Jingxian Lu*, <strong>Wenke Xia*</strong>, Dong Wang, Zhigang Wang, Bin Zhao, <a href="https://dtaoo.github.io/">Di Hu</a>,  Xuelong Li
-          <br>
-          <br>
-          <em>CoRL, 2024</em>
-          <br>
-          <a href="https://www.arxiv.org/abs/2408.02912">arXiv</a> <a href="https://github.com/GeWu-Lab/Keystate_Online_Imitation">code</a>
-          <br>
-        </td>
-      </tr>
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
 
-      <tr>
-        <td style="padding:20px;width:40%;vertical-align:middle">
-          <img src="./images/depth_help.jpg" alt="clean-usnob" width="400" height="200">
-        </td>
-        <td width="75%" valign="middle">
-          <papertitle>Depth Helps: Improving Pre-trained RGB-based Policy with Depth Information Injection</papertitle>
-          <br>
-          <br>
-          Xincheng Pang*, <strong>Wenke Xia*</strong>, Zhigang Wang, Bin Zhao, <a href="https://dtaoo.github.io/">Di Hu</a>, Dong Wang, Xuelong Li
-          <br>
-          <br>
-          <em>IROS, 2024</em>
-          <br>
-          <a href="https://arxiv.org/abs/2302.10912">arXiv</a> / <a href="https://github.com/GeWu-Lab/DepthHelps-IROS2024">code</a>
-          <!-- <a href="https://arxiv.org/abs/2302.10912">arXiv</a> -->
-          <br>
-        </td>
-      </tr>
-
-      <tr>
-        <td style="padding:20px;width:40%;vertical-align:middle">
-          <img src="./images/rss_24.png" alt="clean-usnob" width="400" height="200">
-        </td>
-        <td width="75%" valign="middle">
-          <papertitle>Learning Manipulation by Predicting Interaction</papertitle>
-          <br>
-          <br>
-          Jia Zeng*, Qingwen Bu*, Bangjun Wang*, <strong>Wenke Xia*</strong>, Li Chen, Hao Dong, Haoming Song, Dong Wang, Di Hu, Ping Luo, Heming Cui, Bin Zhao, Xuelong Li, Yu Qiao, Hongyang Li
-          <br>
-          <br>
-          <em>RSS, 2024</em>
-          <br>
-          <a href="https://arxiv.org/pdf/2406.00439">arXiv</a> / <a href="https://github.com/OpenDriveLab/MPI">code</a>
-          <br>
-        </td>
-      </tr>
-
-      <tr>
-        <td style="padding:20px;width:40%;vertical-align:middle">
-          <img src="./images/icra_24.png" alt="clean-usnob" width="400" height="200">
-        </td>
-        <td width="75%" valign="middle">
-          <papertitle>Kinematic-aware Prompting for Generalizable Articulated Object
-            Manipulation with LLMs</papertitle>
-          <br>
-          <br>
-          <strong>Wenke Xia*</strong>, Dong Wang*, Xincheng Pang, Zhigang Wang, Bin Zhao, <a href="https://dtaoo.github.io/">Di Hu</a>, Xuelong Li
-          <br>
-          <br>
-          <em>ICRA, 2024</em>
-          <br>
-          <a href="https://arxiv.org/pdf/2311.02847">arXiv</a> / <a href="https://github.com/xwinks/LLM_articulated_object_manipulation">code</a>
-          <br>
-        </td>
-      </tr>
-
-
-      <tr>
-        <td style="padding:20px;width:40%;vertical-align:middle">
-          <img src="./images/balanced_dataset.png" alt="clean-usnob" width="400" height="200">
-        </td>
-        <td width="75%" valign="middle">
-          <papertitle>Balanced Audiovisual Dataset for Imbalance Analysis</papertitle>
-          <br>
-          <br>
-          <strong>Wenke Xia*</strong>, Xu Zhao*, Xincheng Pang, <a href="http://cic.tju.edu.cn/faculty/zhangchangqing/code.html">Changqing Zhang</a>, <a href="https://dtaoo.github.io/">Di Hu</a>
-          <br>
-          <br>
-          <em>CVPR Workshop, 2023</em>
-          <br>
-          <a href="https://arxiv.org/abs/2302.10912">arXiv</a>/ <a href="https://github.com/GeWu-Lab/Balanced_Audiovisual_Dataset">code</a>
-          <br>
-        </td>
-      </tr>
-
-      <tr>
-        <td style="padding:20px;width:40%;vertical-align:middle">
-          <img src="images/ICME.png" alt="clean-usnob" width="400" height="200">
-        </td>
-        <td width="75%" valign="middle">
-          <papertitle>Robust Cross-Modal Knowledge Distillation for Unconstrained Videos</papertitle>
-          <br>
-          <br>
-          <strong>Wenke Xia</strong>,<a href="https://scholar.google.com/citations?user=f9V0NZkAAAAJ&hl=en">Xingjian Li</a>, <a href="https://antony0621.github.io/">Andong Deng</a>, Haoyi Xiong,<a href="https://ix.cs.uoregon.edu/~dou/">Dejing Dou</a>, <a href="https://dtaoo.github.io">Di Hu</a>
-          <br>
-          <br>
-          <em>ICME</em>, 2023 &nbsp 
-          <br>
-          <a href="https://arxiv.org/abs/2304.07775">arXiv</a> / <a href="https://github.com/GeWu-Lab/cross-modal-distillation">code</a>
-          <br>
-        </td>
-      </tr>
-    </tbody></table>
-
-
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <p font-size:small;>
-                <br>
-                <br>
-                <div style="float:left;">
-                    Updated at April 2025
-                </div>
-                <div style="float:right;">
-                    Thanks <a href="https://jonbarron.info">Jon Barron</a> for this amazing template.
-                </div>
-                <br>
-                <br>        
-            </p>                           
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+    </script>
 </body>
-
 </html>
